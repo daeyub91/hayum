@@ -1,305 +1,322 @@
-        @page {
-            size: A4;
-            margin: 20mm 20mm;
-            background-color: #faf8f5;
-        }
-        
-        *, *::before, *::after {
-            box-sizing: border-box;
-        }
-        
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Times New Roman', 'Noto Serif KR', 'Malgun Gothic', serif;
-            color: #2a1f16;
-            line-height: 1.7;
-            background-color: #faf8f5;
-            -webkit-text-size-adjust: none;
-        }
-        
-        .container {
-            width: 100%;
-            max-width: 650px;
-            margin: 0 auto;
-            padding: 25mm 20px 40mm 20px;
-        }
-        
-        header {
-            margin-bottom: 22mm;
-            text-align: center;
-        }
-        
-        .brand-logo {
-            width: 100%;
-            max-width: 520px;
-            height: auto;
-            margin: 0 auto;
-            display: block;
-        }
-        
-        main {
-            margin-bottom: 25mm;
-        }
-        
-        .section {
-            margin-bottom: 14mm;
-        }
-        
-        .section-title {
-            font-size: 12pt;
-            font-weight: 700;
-            letter-spacing: 2px;
-            color: #5a4838;
-            margin-bottom: 14px;
-            text-transform: uppercase;
-            border-bottom: 1px solid #ede5d1;
-            padding-bottom: 6px;
-        }
-        
-        .section-content {
-            font-size: 10.5pt;
-            color: #2a1f16;
-            text-align: justify;
-        }
-        
-        .section-content p {
-            margin: 0 0 12px 0;
-        }
-        
-        .section-content p:last-child {
-            margin-bottom: 0;
-        }
+@page {
+    size: A4;
+    margin: 20mm 20mm;
+    background-color: #faf8f5;
+}
 
-        /* 강조 블록 스타일 (투자 원칙 및 세부 사업 부문용) */
-        .business-block {
-            margin-bottom: 14px;
-            padding-left: 12px;
-            border-left: 2px solid #8f7e6b;
-        }
+*, *::before, *::after {
+    box-sizing: border-box;
+}
 
-        .business-block-title {
-            font-size: 10.5pt;
-            font-weight: bold;
-            color: #5a4838;
-            margin-bottom: 4px;
-        }
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', 'Noto Serif KR', 'Malgun Gothic', serif;
+    color: #2a1f16;
+    line-height: 1.7;
+    background-color: #faf8f5;
+    -webkit-text-size-adjust: none;
+}
 
-        .business-block-desc {
-            font-size: 10pt;
-            color: #4a3d30;
-            line-height: 1.6;
-        }
-        
-        .grid-table {
-            display: table;
-            width: 100%;
-            margin-top: 5px;
-        }
-        
-        .grid-row {
-            display: table-row;
-        }
-        
-        .grid-label {
-            display: table-cell;
-            width: 105px;
-            font-weight: bold;
-            color: #5a4838;
-            padding-bottom: 8px;
-            font-size: 10pt;
-        }
-        
-        .grid-value {
-            display: table-cell;
-            color: #2a1f16;
-            padding-bottom: 8px;
-            font-size: 10pt;
-            word-break: keep-all;
-        }
+.container {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 25mm 20px 40mm 20px;
+}
 
-        .history-list {
-            margin-top: 10px;
-        }
-        
-        .history-item {
-            display: flex;
-            margin-bottom: 12px;
-            font-size: 10.5pt;
-        }
-        
-        .history-date {
-            width: 105px;
-            font-weight: bold;
-            color: #8f7e6b;
-            flex-shrink: 0;
-        }
-        
-        .history-text {
-            color: #2a1f16;
-        }
-        
-        footer {
-            border-top: 1px solid #ede5d1;
-            padding-top: 10mm;
-        }
-        
-        .info-title {
-            font-size: 10pt;
-            font-weight: 700;
-            color: #5a4838;
-            margin-bottom: 12px;
-            letter-spacing: 1px;
-        }
+header {
+    margin-bottom: 22mm;
+    text-align: center;
+}
 
-        /* 📱 모바일 반응형 스타일 (화면 폭이 500px 이하일 때 작동) */
-        @media screen and (max-width: 500px) {
-            .container {
-                padding-top: 15mm;
-                padding-bottom: 25mm;
-            }
-            
-            header {
-                margin-bottom: 15mm;
-            }
+.brand-logo {
+    width: 100%;
+    max-width: 520px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
 
-            .grid-table, .grid-row, .grid-label, .grid-value {
-                display: block;
-                width: 100%;
-            }
+main {
+    margin-bottom: 25mm;
+}
 
-            .grid-label {
-                padding-bottom: 2px;
-                font-size: 9.5pt;
-            }
+.section {
+    margin-bottom: 14mm;
+}
 
-            .grid-value {
-                padding-bottom: 12px;
-                font-size: 10pt;
-            }
-            
-            .history-item {
-                flex-direction: column;
-                margin-bottom: 15px;
-            }
-            
-            .history-date {
-                width: 100%;
-                margin-bottom: 2px;
-            }
-        }
+.section-title {
+    font-size: 12pt;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #5a4838;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ede5d1;
+    padding-bottom: 6px;
+}
+
+.section-content {
+    font-size: 10.5pt;
+    color: #2a1f16;
+    text-align: justify;
+}
+
+.section-content p {
+    margin: 0 0 12px 0;
+}
+
+.section-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* 강조 블록 스타일 (투자 원칙 및 세부 사업 부문용) */
+.business-block {
+    margin-bottom: 14px;
+    padding-left: 12px;
+    border-left: 2px solid #8f7e6b;
+}
+
+.business-block-title {
+    font-size: 10.5pt;
+    font-weight: bold;
+    color: #5a4838;
+    margin-bottom: 4px;
+}
+
+.business-block-desc {
+    font-size: 10pt;
+    color: #4a3d30;
+    line-height: 1.6;
+}
+
+.grid-table {
+    display: table;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.grid-row {
+    display: table-row;
+}
+
+.grid-label {
+    display: table-cell;
+    width: 105px;
+    font-weight: bold;
+    color: #5a4838;
+    padding-bottom: 8px;
+    font-size: 10pt;
+}
+
+.grid-value {
+    display: table-cell;
+    color: #2a1f16;
+    padding-bottom: 8px;
+    font-size: 10pt;
+    word-break: keep-all;
+}
+
+.history-list {
+    margin-top: 10px;
+}
+
+.history-item {
+    display: flex;
+    margin-bottom: 12px;
+    font-size: 10.5pt;
+}
+
+.history-date {
+    width: 105px;
+    font-weight: bold;
+    color: #8f7e6b;
+    flex-shrink: 0;
+}
+
+.history-text {
+    color: #2a1f16;
+}
+
+footer {
+    border-top: 1px solid #ede5d1;
+    padding-top: 10mm;
+}
+
+.info-title {
+    font-size: 10pt;
+    font-weight: 700;
+    color: #5a4838;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+}
 
 
-        /* ==========================================================================
-        🔔 공지사항 팝업창(모달) 애니메이션 디자인 스타일
-        ========================================================================== */
-        .modal-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(42, 31, 22, 0.4); /* 해윰 시그니처 딥브라운 톤 반투명 배경 */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 9999;
-            opacity: 0;
-            pointer-events: none;
-            transition: opacity 0.3s ease;
-        }
+/* ==========================================================================
+   🔔 [위치 조정됨] PC용 기본 공지사항 팝업창(모달) 디자인 스타일
+   ========================================================================== */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(42, 31, 22, 0.4); /* 해윰 시그니처 딥브라운 반투명 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
 
-        .modal-overlay.active {
-            opacity: 1;
-            pointer-events: auto;
-        }
+.modal-overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+}
 
-        .modal-box {
-            background-color: #faf8f5;
-            width: 90%;
-            max-width: 550px;
-            border-radius: 4px;
-            box-shadow: 0 10px 30px rgba(42, 31, 22, 0.15);
-            padding: 25px;
-            transform: translateY(-20px);
-            transition: transform 0.3s ease;
-            border: 1px solid #ede5d1;
-        }
+.modal-box {
+    background-color: #faf8f5;
+    width: 90%;
+    max-width: 550px;
+    border-radius: 4px;
+    box-shadow: 0 10px 30px rgba(42, 31, 22, 0.15);
+    padding: 25px;
+    transform: translateY(-20px);
+    transition: transform 0.3s ease;
+    border: 1px solid #ede5d1;
+}
 
-        .modal-overlay.active .modal-box {
-            transform: translateY(0);
-        }
+.modal-overlay.active .modal-box {
+    transform: translateY(0);
+}
 
-        .modal-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1px solid #ede5d1;
-            padding-bottom: 10px;
-            margin-bottom: 15px;
-        }
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ede5d1;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
 
-        .modal-title {
-            font-size: 10pt;
-            font-weight: 700;
-            letter-spacing: 2px;
-            color: #8f7e6b;
-            text-transform: uppercase;
-        }
+.modal-title {
+    font-size: 10pt;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #8f7e6b;
+    text-transform: uppercase;
+}
 
-        .modal-close-btn {
-            background: none;
-            border: none;
-            font-size: 20pt;
-            color: #8f7e6b;
-            cursor: pointer;
-            line-height: 1;
-            padding: 0;
-        }
+.modal-close-btn {
+    background: none;
+    border: none;
+    font-size: 20pt;
+    color: #8f7e6b;
+    cursor: pointer;
+    line-height: 1;
+    padding: 0;
+}
 
-        .modal-close-btn:hover {
-            color: #2a1f16;
-        }
+.modal-close-btn:hover {
+    color: #2a1f16;
+}
 
-        .modal-body h3 {
-            margin: 0 0 5px 0;
-            font-size: 13pt;
-            font-weight: 700;
-            color: #2a1f16;
-            line-height: 1.4;
-        }
+.modal-body h3 {
+    margin: 0 0 5px 0;
+    font-size: 13pt;
+    font-weight: 700;
+    color: #2a1f16;
+    line-height: 1.4;
+}
 
-        .modal-date {
-            margin: 0;
-            font-size: 9.5pt;
-            color: #8f7e6b;
-        }
+.modal-date {
+    margin: 0;
+    font-size: 9.5pt;
+    color: #8f7e6b;
+}
 
-        .modal-text {
-            font-size: 10.5pt;
-            color: #2a1f16;
-            line-height: 1.7;
-            text-align: justify;
-        }
+.modal-text {
+    font-size: 10.5pt;
+    color: #2a1f16;
+    line-height: 1.7;
+    text-align: justify;
+}
 
-        .modal-text p {
-            margin: 0 0 12px 0;
-        }
+.modal-text p {
+    margin: 0 0 12px 0;
+}
 
-        .modal-text p:last-child {
-            margin-bottom: 0;
-        }
+.modal-text p:last-child {
+    margin-bottom: 0;
+}
 
-        /* 모바일 환경 팝업 패딩 최적화 */
-        @media screen and (max-width: 500px) {
-            .modal-box {
-                padding: 20px;
-                width: 92%;
-            }
-            .modal-body h3 {
-                font-size: 11.5pt;
-            }
-            .modal-text {
-                font-size: 10pt;
-            }
-        }
+
+/* ==========================================================================
+   📱 [최하단 고정] 모바일 반응형 스타일 (화면 폭이 500px 이하 및 전체 모바일 최적화)
+   ========================================================================== */
+@media screen and (max-width: 500px) {
+    .container {
+        padding-top: 15mm;
+        padding-bottom: 25mm;
+    }
+    
+    header {
+        margin-bottom: 15mm;
+    }
+
+    .grid-table, .grid-row, .grid-label, .grid-value {
+        display: block;
+        width: 100%;
+    }
+
+    .grid-label {
+        padding-bottom: 2px;
+        font-size: 9.5pt;
+    }
+
+    .grid-value {
+        padding-bottom: 12px;
+        font-size: 10pt;
+    }
+    
+    .history-item {
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+    
+    .history-date {
+        width: 100%;
+        margin-bottom: 2px;
+    }
+
+    /* 🚨 팝업창 모바일 바닥 흘러내림 방지 최종 처리 */
+    .modal-overlay {
+        position: fixed !important; /* 무조건 화면 전체 고정 */
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        z-index: 99999 !important;
+    }
+
+    .modal-box {
+        padding: 20px !important;
+        width: 92% !important;
+        max-height: 85vh !important; /* 세로가 긴 폰에서도 안 깨지게 크기 제어 */
+        overflow-y: auto !important; /* 글이 넘치면 내부 스크롤 조치 */
+    }
+
+    .modal-body h3 {
+        font-size: 11.5pt !important;
+    }
+
+    .modal-text {
+        font-size: 10pt !important;
+    }
+}
