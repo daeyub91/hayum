@@ -22,36 +22,36 @@
             color: #2a1f16;
             line-height: 1.6;
             background-color: #faf8f5;
+            -webkit-text-size-adjust: none; /* 모바일 기기 임의 폰트 확대 방지 */
         }
         
         .container {
             width: 100%;
             max-width: 650px;
             margin: 0 auto;
-            padding-top: 25mm;
-            padding-bottom: 40mm; 
+            padding: 25mm 20px 40mm 20px; /* 모바일 좌우 여백 20px 확보 */
         }
         
         header {
-            margin-bottom: 25mm;
+            margin-bottom: 20mm;
             text-align: center;
         }
         
-        /* 로고가 본문 텍스트 가로폭과 균형을 이루도록 크기 및 여백 조정 */
+        /* 로고가 본문 가로폭에 맞춰 부드럽게 줄어들도록 설정 */
         .brand-logo {
             width: 100%;
-            max-width: 520px; /* 본문 텍스트 라인과 조화를 이루는 최적의 가로폭 */
+            max-width: 520px;
             height: auto;
             margin: 0 auto;
             display: block;
         }
         
         main {
-            margin-bottom: 35mm;
+            margin-bottom: 25mm;
         }
         
         .section {
-            margin-bottom: 15mm;
+            margin-bottom: 12mm;
         }
         
         .section-title {
@@ -79,6 +79,7 @@
             margin-bottom: 0;
         }
         
+        /* 데스크톱 기준 기본 테이블 스타일 */
         .grid-table {
             display: table;
             width: 100%;
@@ -91,7 +92,7 @@
         
         .grid-label {
             display: table-cell;
-            width: 90px;
+            width: 105px; /* 약간 여유 있게 조정 */
             font-weight: bold;
             color: #5a4838;
             padding-bottom: 8px;
@@ -103,6 +104,7 @@
             color: #2a1f16;
             padding-bottom: 8px;
             font-size: 10pt;
+            word-break: keep-all; /* 단어 단위 줄바꿈으로 깔끔하게 처리 */
         }
 
         .history-list {
@@ -116,7 +118,7 @@
         }
         
         .history-date {
-            width: 90px;
+            width: 105px;
             font-weight: bold;
             color: #8f7e6b;
             flex-shrink: 0;
@@ -137,6 +139,47 @@
             color: #5a4838;
             margin-bottom: 10px;
             letter-spacing: 1px;
+        }
+
+        /* ==========================================================================
+           📱 모바일 반응형 핵심 스타일 (화면 폭이 500px 이하일 때 작동)
+           ========================================================================== */
+        @media screen and (max-width: 500px) {
+            .container {
+                padding-top: 15mm; /* 모바일에서는 상단 여백을 살짝 줄임 */
+                padding-bottom: 25mm;
+            }
+            
+            header {
+                margin-bottom: 15mm;
+            }
+
+            /* 테이블 형태를 세로 쌓임 구조(Block)로 변환하여 가독성 확보 */
+            .grid-table, .grid-row, .grid-label, .grid-value {
+                display: block;
+                width: 100%;
+            }
+
+            .grid-label {
+                padding-bottom: 2px;
+                font-size: 9.5pt;
+            }
+
+            .grid-value {
+                padding-bottom: 12px; /* 항목 간 간격 확보 */
+                font-size: 10pt;
+            }
+            
+            /* 연혁 부문 모바일 최적화 */
+            .history-item {
+                flex-direction: column;
+                margin-bottom: 15px;
+            }
+            
+            .history-date {
+                width: 100%;
+                margin-bottom: 2px;
+            }
         }
     </style>
 </head>
